@@ -1,0 +1,205 @@
+/* add font style */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500&family=Sevillana&family=Work+Sans&display=swap');
+
+/* css variables */
+:root {
+    --primary-color: #FF900E;
+    --text-color: #131313;
+    --description-color: #727272;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* header part */
+.header {
+    height: 1100px;
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+.navigation-var {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    padding: 50px;
+}
+
+.navigation-var ul {
+    display: flex;
+    list-style: none;
+    column-gap: 38px;
+}
+.logo-title{
+    color: var(--text-color);
+    font-size: 41px;
+    font-weight: 700;
+}
+.navigation-var ul li{
+    font-size: 18px;
+    font-weight: 500;
+    color: #424242;
+}
+.header-info{
+    max-width: 1250px;
+    margin: 0 auto;
+    text-align: center;
+}
+.header-title{
+    color: var(--text-color);
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 70px;
+    margin: 10px 0;
+}
+.description{
+    color: var(--description-color);
+    line-height: 20px;
+}
+.header-info img{
+    width: 100%;
+    height: 600px;
+    border-radius: 7px;
+}
+.btn-primary{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 13px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    margin: 40px 0;
+}
+/*List of features part */
+.features-part{
+    display: flex;
+    align-items: center;
+    column-gap: 64px;
+    padding: 80px 200px;
+}
+.feature-title{
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 13px;
+}
+.highlight1{
+    color: var(--description-color);
+}
+.highlight2{
+    color: var(--primary-color);
+}
+.img-gallery {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+.img-gallery img{
+    width: 300px;
+    height: 300px;
+}
+/* features experience part */
+.features-experience{
+    display: flex;
+    column-gap:250px ;
+    padding: 100px 150px;
+}
+.features-experience-title,.some-fact-title{
+    font-size: 40px;
+    color: var(--text-color);
+    font-weight: 700;
+    padding-left: 5px;
+    margin-bottom: 20px;
+}
+.features-experience-title{
+    border-left: 5px solid var(--primary-color);
+}
+.experience-title{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+.experience-body{
+    margin: 20px 0px;
+    padding: 15px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 9px;
+}
+.features-experience img{
+    width: 510px;
+}
+.experience-year{
+    width: 240px;
+    height: 100px;
+    border-radius: 9px;
+    color: white;
+    text-align: center;
+    margin: -80px;
+    position: relative;
+    z-index: 2;
+    background-color: var(--primary-color);
+}
+.experience-year .year{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+/*-----------------
+ some facts styles
+ ------------------ */
+.some-fact,.our-sponsors{
+    padding: 10px 150px;
+}
+.card-container{
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+    width: 240px;
+    height: 220px;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    transition: transform 1s ;
+}
+.card-title,.sponsor-title{
+    font-size: 40px;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+.card:hover{
+    box-shadow: 10px 10px 38px rgb(237, 171, 146);
+    border: none;
+    background-color: rgb(248, 245, 245);
+    transform: scale(1.1);
+}
+/* our sponsor styles */
+.our-sponsors,.sponsor-title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.company-logo{
+    display: flex;
+    justify-content: space-around;
+    margin:50px 0px 130px
+}
+.company-logo img{
+    filter: grayscale(1);
+}
+/* footer area styles */
+.footer{
+    margin: 0 150px 150px;
+    padding: 20px;
+    border-radius: 9px;
+    text-align: center;
+    background-color:#FFF4E7;
+}
