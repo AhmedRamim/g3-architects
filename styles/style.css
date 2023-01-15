@@ -294,9 +294,11 @@ List of features styles
         padding: 14px 0;
     }
     .navigation-var ul {
+        flex-direction: column;
         margin-top: 20px;
-        gap: 25px;
+        gap: 15px;
     }
+
     .header {
         height: 100%;
         padding: 10px;
